@@ -1,20 +1,20 @@
 function pagina() {
     const div = document.querySelector(".container")
 
-    const titulo = document.createElement('h2');
+    const titulo = document.createElement("h2");
     titulo.textContent = "Lista de Tarefas";
 
-    const input = document.createElement('input');
-    input.id = 'tarefaInput';
-    input.type = 'text';
-    input.placeholder = 'Digite uma tarefa';
+    const input = document.createElement("input");
+    input.id = "tarefaInput";
+    input.type = "text";
+    input.placeholder = "Digite uma tarefa";
 
-    const botao = document.createElement('button');
-    botao.textContent = 'Adicionar Tarefa';
-    botao.id = 'btn-adicionar';
+    const botao = document.createElement("button");
+    botao.textContent = "Adicionar Tarefa";
+    botao.id = "btn-adicionar";
     
-    const lista = document.createElement('ul');
-    lista.id = 'listaTarefas';
+    const lista = document.createElement("ul");
+    lista.id = "listaTarefas";
 
     div.appendChild(titulo);
     div.appendChild(input);
