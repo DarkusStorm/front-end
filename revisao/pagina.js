@@ -1,7 +1,4 @@
 function pagina() {
-
-    const body = document.body;
-
     const div = document.createElement('div');
     div.classList.add('container');
 
@@ -20,7 +17,7 @@ function pagina() {
     const lista = document.createElement('ul');
     lista.id = 'listaTarefas';
 
-    body.appendChild(div);
+    document.body.append(div);
     div.appendChild(titulo);
     div.appendChild(input);
     div.appendChild(botao);
