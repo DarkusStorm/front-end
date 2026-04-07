@@ -16,7 +16,6 @@ function pagina() {
     const lista = document.createElement('ul');
     lista.id = 'listaTarefas';
 
-    document.body.append(div);
     div.appendChild(titulo);
     div.appendChild(input);
     div.appendChild(botao);
