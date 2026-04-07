@@ -1,6 +1,5 @@
 function pagina() {
-    const div = document.createElement('div');
-    div.classList.add('container');
+    const div = document.querySelector(".container")
 
     const titulo = document.createElement('h2');
     titulo.textContent = "Lista de Tarefas";
