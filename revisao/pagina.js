@@ -1,7 +1,7 @@
 function pagina() {
-    const div = document.querySelector(".container")
+    const div = document.querySelector(".container"); // Pega a div de classe "container" no body;
 
-    const titulo = document.createElement("h2");
+    const titulo = document.createElement("h2"); // Cria o elemento h2 (e no meio do código, associa ele e todas as criações à div da página)
     titulo.textContent = "Lista de Tarefas";
 
     const input = document.createElement("input");
