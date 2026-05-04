@@ -47,7 +47,7 @@ function biblioteca() {
             autor.textContent = `Autor(a): ${livro.autor}`;
 
             const status = document.createElement("p");
-            if (livro.disponivel == true) {
+            if (livro.disponivel) {
                 status.textContent = "Status: Disponível";
                 status.classList.add("livro-disponivel");
             }
@@ -59,12 +59,13 @@ function biblioteca() {
             const botaoReservar = document.createElement("button");
             botaoReservar.textContent = "Reservar Livro";
 
-            if (livro.disponivel == true) {
+            if (livro.disponivel) {
                 botaoReservar.addEventListener("click", () => {
                     botaoReservar.textContent = "Reservado!";
                     status.textContent = "Status: Emprestado";
                     botaoReservar.disabled = true;
                     livro.disponivel = false;
+                    status.classList.remove("livro-disponivel")
                     status.classList.add("livro-emprestado");
                     console.log(`Livro de cadastro: ${livro.titulo} reservado com sucesso!`);
                 });
